@@ -1,0 +1,2 @@
+# bright-minds-frontend
+
