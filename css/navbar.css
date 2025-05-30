@@ -1,0 +1,52 @@
+/* Header */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.navbar-brand span {
+  color: var(--secondary-color);
+}
+
+.nav-link {
+  font-weight: 600;
+  color: var(--dark-color);
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color);
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover:after,
+.nav-link.active:after {
+  width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
