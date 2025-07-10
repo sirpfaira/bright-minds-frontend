@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parents Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <i class="fas fa-sun me-2"></i>Bright <span>Minds</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reports.html">Reports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./enrollments.html">Enrollments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./messaging.html">Messaging</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="content-wrapper">
+        <div class="container">
+          <h1 class="mb-2">Welcome to Events</h1>
+          <p class="mb-4">
+            Here you can view upcoming school events and important dates.
+          </p>
+          <div class="row  fade-in">
+            <div class="col-md-4">
+              <div class="basic-card">
+                <h5>Parent-Teacher Conference</h5>
+                <p>Date: March 15, 2024</p>
+                <p>Time: 5:00 PM - 7:00 PM</p>
+                <p>Location: School Auditorium</p>
+                <button class="btn btn-primary mt-2">RSVP</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="basic-card">
+                <h5>Spring Concert</h5>
+                <p>Date: April 20, 2024</p>
+                <p>Time: 6:30 PM - 8:00 PM</p>
+                <p>Location: School Gymnasium</p>
+                <button class="btn btn-primary mt-2">RSVP</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="basic-card">
+                <h5>Field Day</h5>
+                <p>Date: May 10, 2024</p>
+                <p>Time: All day event</p>
+                <p>Location: School Playground</p>
+                <button class="btn btn-primary mt-2">RSVP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

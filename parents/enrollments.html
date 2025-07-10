@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parents Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <i class="fas fa-sun me-2"></i>Bright <span>Minds</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reports.html">Reports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./enrollments.html"
+                  >Enrollments</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./messaging.html">Messaging</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="content-wrapper">
+        <div class="container">
+          <h1 class="mb-2">Welcome to Enrollments</h1>
+          <p>Here you can manage your children's enrollments.</p>
+          <div class="basic-card my-4 fade-in">
+            <div class="card-header">
+              <h2>Current Enrollments</h2>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex flex-column">
+                  <div class="d-flex flex-column">
+                    <span>Name: Junior Mpho Mokoena</span>
+                    <span>Class: A</span>
+                    <span>Enrollment Date: 2025-01-15</span>
+                  </div>
+                  <div class="d-flex my-2">
+                    <button class="btn btn-secondary">View details</button>
+                    <button class="btn btn-danger mx-4">Cancel enrollment</button>
+                  </div>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <div class="d-flex flex-column">
+                    <span>Name: Lindokuhle Scott Mokoena</span>
+                    <span>Class: C</span>
+                    <span>Enrollment Date: 2023-01-15</span>
+                  </div>
+                  <span class="badge bg-primary rounded-pill">View</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="my-4 basic-card fade-in">
+            <h3>Apply for enrollment</h3>
+            <form>
+              <div class="mb-3">
+                <label for="first-names" class="form-label"
+                  ><strong>First Name(s)</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your child's first name(s)"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="form-label"
+                  ><strong>Last Name</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last-name"
+                  placeholder="Enter your child's last name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="id-number" class="form-label"
+                  ><strong>ID Number</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="id-number"
+                  placeholder="Enter your child's ID number"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="gender" class="form-label"
+                  ><strong>Gender</strong></label
+                >
+                <select class="form-select" id="gender">
+                  <option selected>Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="date-of-birth" class="form-label"
+                  ><strong>Date of Birth</strong></label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="date-of-birth"
+                  placeholder="Enter your child's date of birth"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="class" class="form-label"
+                  ><strong>Requested Class</strong></label
+                >
+                <select class="form-select" id="class">
+                  <option selected>Select Class</option>
+                  <option value="A">Class A</option>
+                  <option value="B">Class B</option>
+                  <option value="C">Class C</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Submit Application
+              </button>
+            </form>
+          </div>
+          <div class="basic-card my-4 fade-in">
+            <div class="card-header">
+              <h2>Applications history</h2>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <div class="d-flex flex-column">
+                    <span>Name: Nandi Mokoena</span>
+                    <span>Requested Class: C</span>
+                    <span>Request Date: 2025-02-10</span>
+                  </div>
+                  <span class="badge bg-warning text-dark rounded-pill"
+                    >Pending</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <div class="d-flex flex-column">
+                    <span>Name: Sipho Mokoena</span>
+                    <span>Requested Class: B</span>
+                    <span>Request Date: 2025-02-01</span>
+                  </div>
+                  <span class="badge bg-success rounded-pill">Approved</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <div class="d-flex flex-column">
+                    <span>Name: Thandiwe Mokoena</span>
+                    <span>Requested Class: A</span>
+                    <span>Request Date: 2025-02-05</span>
+                  </div>
+                  <span class="badge bg-danger rounded-pill">Rejected</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>
